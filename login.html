@@ -19,6 +19,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
     />
+    <script src="log.js"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
@@ -32,7 +33,7 @@
           <div class="field">
             <label class="label">Username</label>
             <div class="control has-icons-right">
-              <input class="input" type="text" />
+              <input id="login" class="input" type="text" />
               <span class="icon is-small is-right">
                 <i class="fa fa-user"></i>
               </span>
@@ -42,14 +43,14 @@
           <div class="field">
             <label class="label">Password</label>
             <div class="control has-icons-right">
-              <input class="input" type="password" />
+              <input id="password" class="input" type="password" />
               <span class="icon is-small is-right">
                 <i class="fa fa-key"></i>
               </span>
             </div>
           </div>
           <div class="has-text-centered">
-            <a class="button is-vcentered is-primary is-outlined">Login</a>
+            <a class="button is-vcentered is-primary is-outlined" onClick='validate()'>Login</a>
           </div>
           <div class="has-text-centered">
             <a href="signup.html"> Don't you have an account? Sign up now!</a>
