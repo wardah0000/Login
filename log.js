@@ -1,5 +1,3 @@
-
-
 function validate(){  
     var name= document.getElementById("username").value;  
     var pass= document.getElementById("password").value;
