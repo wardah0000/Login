@@ -37,51 +37,56 @@
             />
           </div>
 
-          <div class="field">
-            <label class="label">Username</label>
-            <div class="control has-icons-right">
-              <input class="input" type="text" id="username" required />
-              <span class="icon is-small is-right">
-                <i class="fa fa-user"></i>
-              </span>
+          <form action="/register/" method="POST">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-right">
+                <input
+                  name="email"
+                  id="email"
+                  class="input"
+                  type="text"
+                  required
+                />
+                <span class="icon is-small is-right">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <p id="email_error" class="help is-danger"></p>
             </div>
-            <p id="username_error" class="help is-danger"></p>
-          </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-right">
-              <input id="email" class="input" type="text" required />
-              <span class="icon is-small is-right">
-                <i class="fa fa-envelope"></i>
-              </span>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control has-icons-right">
+                <input
+                  name="password"
+                  class="input"
+                  type="password"
+                  id="password"
+                  required
+                />
+                <span class="icon is-small is-right">
+                  <i class="fa fa-key"></i>
+                </span>
+                <p id="password_error" class="help is-danger"></p>
+              </div>
             </div>
-            <p id="email_error" class="help is-danger"></p>
-          </div>
 
-          <div class="field">
-            <label class="label">Password</label>
-            <div class="control has-icons-right">
-              <input class="input" type="password" id="password" required />
-              <span class="icon is-small is-right">
-                <i class="fa fa-key"></i>
-              </span>
-              <p id="password_error" class="help is-danger"></p>
+            <div class="has-text-centered">
+              <input
+                class="button is-vcentered is-primary is-outlined"
+                onClick="validate()"
+                type="submit"
+                value="Sign Up!"
+              />
             </div>
-          </div>
-
-          <div class="has-text-centered">
-            <a
-              class="button is-vcentered is-primary is-outlined"
-              onClick="validate()"
-              >Sign Up!</a
-            >
-          </div>
-          <div class="has-text-centered">
-            <a href="/login"> Already have an account? Log in now !</a>
-          </div>
+            <div class="has-text-centered">
+              <a href="/login"> Already have an account? Log in now !</a>
+            </div>
+          </form>
         </section>
       </div>
+
       <div id="particles-js" class="interactive-bg column is-8"></div>
     </div>
   </body>
