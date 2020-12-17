@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/img/logo_r_resumme.png" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/proxy/-BHIQ94AB3_wTcaOxtgqlJGwyMJcr48Nz40WZ6bJbdOFniRYNFBl7y42mY8-Bi3YdwA_ZNJMchSnwrm7uUxssVddtBCy"
+      type="image/x-icon"
+    />
     <title>Sign Up</title>
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+    />
     <script src="register.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <div class="columns is-vcentered">
-      <div class="login column is-4 ">
+      <div class="login column is-4">
         <section class="section">
           <div class="has-text-centered">
-              <img class="login-logo" src="assets/img/logo_r_resumme.png">
+            <img
+              class="login-logo"
+              src="https://lh3.googleusercontent.com/proxy/-BHIQ94AB3_wTcaOxtgqlJGwyMJcr48Nz40WZ6bJbdOFniRYNFBl7y42mY8-Bi3YdwA_ZNJMchSnwrm7uUxssVddtBCy"
+            />
           </div>
-          <form id="signup" method="post" action="/auth/identity/register">
 
           <div class="field">
             <label class="label">Username</label>
             <div class="control has-icons-right">
-              <input class="input" type="text" id="username" required>
+              <input class="input" type="text" id="username" required />
               <span class="icon is-small is-right">
                 <i class="fa fa-user"></i>
               </span>
             </div>
+            <p id="username_error" class="help is-danger"></p>
           </div>
 
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-right">
-              <input class="input" type="text" required>
+              <input id="email" class="input" type="text" required />
               <span class="icon is-small is-right">
                 <i class="fa fa-envelope"></i>
               </span>
             </div>
+            <p id="email_error" class="help is-danger"></p>
           </div>
 
           <div class="field">
             <label class="label">Password</label>
             <div class="control has-icons-right">
-              <input class="input" type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <input class="input" type="password" id="password" required />
               <span class="icon is-small is-right">
                 <i class="fa fa-key"></i>
               </span>
+              <p id="password_error" class="help is-danger"></p>
             </div>
           </div>
-          <div id="message">
-            <h3>Password must contain the following:</h3>
-            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-            <p id="number" class="invalid">A <b>number</b></p>
-            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-          </div>
 
-        </form>
           <div class="has-text-centered">
-            <a class="button is-vcentered is-primary is-outlined" onClick='validate()'>Sign Up!</a>
+            <a
+              class="button is-vcentered is-primary is-outlined"
+              onClick="validate()"
+              >Sign Up!</a
+            >
           </div>
           <div class="has-text-centered">
             <a href="/login"> Already have an account? Log in now !</a>
           </div>
         </section>
       </div>
-      <div id="particles-js" class="interactive-bg column is-8">
-
-      </div>
+      <div id="particles-js" class="interactive-bg column is-8"></div>
     </div>
-
   </body>
 </html>
